@@ -25,5 +25,5 @@ pip install netifaces
 The modules supports only Windows operating system.
 
 The module requires administrator privileges to work well; <br>
-Since, by default - win os requires admin privilege to modify routing table.
+Since, by default - win os requires admin privileges to modify routing table.
 

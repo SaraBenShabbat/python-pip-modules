@@ -22,7 +22,8 @@ def get_ip(ip_address: str) -> list:
     if(validate_ip(ip_address) == True):
         return [ip_address]
     else:
-        print('Error: ' + ip_address + ' isn\'t a valid ip address.')
+        print('Error: \'{}\' isn\'t a valid ip address.'.format(ip_address))
+        return []
     
     
 def validate_url(domain_name: str) -> bool:
@@ -51,7 +52,8 @@ def get_ip_from_url(domain_name: str) -> list:
         finally:
             return ips_lst
     else:
-        print('Error: ' + domain_name + ' isn\'t a valid domain name.')
+        print('Error: \'{}\' isn\'t a valid domain name.'.format(domain_name))
+        return []
              
 
 def get_default_gateway() -> str:
@@ -69,6 +71,6 @@ def exclude_ips(default_gw: str, ips_lst: list) -> None:
         errcode = process.returncode
 
         if errcode is not None:
-            raise Exception('cmd %s failed, see above for details', cmd)
+            raise Exception('cmd {} failed, see above for details'.format(cmd))
  
 

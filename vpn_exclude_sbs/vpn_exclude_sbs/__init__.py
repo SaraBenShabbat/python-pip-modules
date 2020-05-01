@@ -7,6 +7,6 @@ Created on Wed Apr 29 10:05:34 2020
 @author: User
 """
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 

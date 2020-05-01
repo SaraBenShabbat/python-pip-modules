@@ -14,7 +14,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="vpn_exclude_sbs",
-    version="0.1.2",
+    version="0.2.0",
     author="Sara Ben Shabbat",
     author_email="sarabenshabbat@gmail.com",
     description="A package for excluding DNSs from VPN connection.",
